@@ -32,13 +32,13 @@ The process of data cleaning or data wrangling involves several steps to ensure 
      - Fill or remove missing values.
      - Example: For missing `hba1c_change` values, calculate them by subtracting `hba1c_start` from `hba1c_end`.
    - **Step 2: Handle Validity Issues**:
-     - Correct invalid data entries.
+     - Correct invalid data entries (negative heights).
      - Example: Ensure all zip codes are 4 digits by removing invalid entries.
    - **Step 3: Handle Accuracy Issues**:
-     - Correct logically incorrect data.
+     - Correct logically incorrect data (valid but not accurate, ex-weight of an adult is 1kg).
      - Example: Correct the patient's name from "D" to "David" for Patient ID 9.
    - **Step 4: Handle Consistency Issues**:
-     - Standardize data representation.
+     - Standardize data representation (both valid and accurate but written differently, ex-New York and NY).
      - Example: Convert all state names to either full names or abbreviations consistently.
 
 ---

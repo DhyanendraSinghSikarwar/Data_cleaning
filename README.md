@@ -29,7 +29,7 @@ The process of data cleaning or data wrangling involves several steps to ensure 
 
 ### **3. Data Cleaning Order**
    - **Step 1: Quality-> Completeness**:
-   - **Step 2: Tidiness**:
+   - **Step 2: Tidiness(messy data)**:
    - **Step 3: Quality-> Validity**:
    - **Step 4: Quality-> Accuracy**:
    - **Step 5: Quality-> Consistency**:

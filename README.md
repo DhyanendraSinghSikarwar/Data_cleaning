@@ -27,7 +27,16 @@ The process of data cleaning or data wrangling involves several steps to ensure 
 
 ---
 
-### **3. Data Cleaning Steps**
+### **3. Data Cleaning Order**
+   - **Step 1: Quality-> Completeness**:
+   - **Step 2: Tidiness**:
+   - **Step 3: Quality-> Validity**:
+   - **Step 4: Quality-> Accuracy**:
+   - **Step 5: Quality-> Consistency**:
+
+---
+
+### **4. Data Cleaning Steps**
    - **Step 1: Handle Completeness Issues**:
      - Fill or remove missing values.
      - Example: For missing `hba1c_change` values, calculate them by subtracting `hba1c_start` from `hba1c_end`.
@@ -43,7 +52,7 @@ The process of data cleaning or data wrangling involves several steps to ensure 
 
 ---
 
-### **4. Structural Issues (Messy Data)**
+### **5. Structural Issues (Messy Data)**
    - **Issue 1: Combining Multiple Variables in One Column**:
      - Example: In the `Contact` column, both phone numbers and email IDs are combined. Split them into separate columns.
    - **Issue 2: Incorrect Data Format**:
@@ -53,7 +62,7 @@ The process of data cleaning or data wrangling involves several steps to ensure 
 
 ---
 
-### **5. Data Transformation**
+### **6. Data Transformation**
    - **Melt/Pivot Data**:
      - Reshape data to ensure each variable forms a column and each observation forms a row.
      - Example: Convert a wide-format table (e.g., columns for China, India, Pakistan) into a long-format table with a single `Country` column.
@@ -62,13 +71,13 @@ The process of data cleaning or data wrangling involves several steps to ensure 
 
 ---
 
-### **6. Data Validation**
+### **7. Data Validation**
    - After cleaning, validate the data to ensure all issues are resolved.
    - Example: Check for duplicates, missing values, and consistency in the cleaned dataset.
 
 ---
 
-### **7. Documentation**
+### **8. Documentation**
    - Document all steps taken during the cleaning process for reproducibility.
    - Example: Create a notebook with detailed comments on how missing values were handled, how columns were split, etc.
 
